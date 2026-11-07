@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 /**
- * Fizz-Buzz - a program that prints the numbers from 1 to 100,
- * followed by a new line
- * multiples of three print Fizz, multiples of five print Buzz,
- * multiples of both three and five print FizzBuzz.
+ * main - entry point
  *
- * Description: uses printf to print.
+ * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	int i = 1;
+
 	while (i <= 100)
 	{
 		if (i % 5 == 0 && i % 3 == 0)
@@ -29,9 +27,10 @@ int main (void)
 		{
 			printf("%d", i);
 		}
-
-	i++;
-	printf (" ");
+		if (i < 100)
+			printf(" ");
+		i++;
 	}
+	printf("\n");
 	return (0);
 }
