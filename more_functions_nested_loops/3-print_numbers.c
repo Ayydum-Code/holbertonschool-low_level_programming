@@ -3,7 +3,7 @@
 /**
  * print_numbers - prints the numbers, from 0 to 9, followed by a new line.
  *
- * description: uses _putchar to print 0 to 9
+ * Description: uses _putchar to print 0 to 9
  */
 void print_numbers(void)
 {
@@ -17,5 +17,4 @@ void print_numbers(void)
 	}
 	_putchar('\n');
 
-	
 }
