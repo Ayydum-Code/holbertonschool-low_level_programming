@@ -32,6 +32,8 @@ int _atoi(char *s)
 		{
 			result = -result;
 		}
+		else
+			result = result * 10 + (s[x] - '0');
+
 		return (result);
 }
-
