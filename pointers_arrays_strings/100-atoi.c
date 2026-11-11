@@ -4,7 +4,7 @@
  * _atoi - a function that convert a string to an integer
  * @s: The string being converted
  *
- * Return: 0 if no numbers remain to convert
+ * Return: the converted integer, or 0 if there are no digits
  */
 int _atoi(char *s)
 {
@@ -23,17 +23,17 @@ int _atoi(char *s)
 	}
 	while (s[x] >= '0' && s[x] <= '9')
 	{
-		result = result * 10 + (s[x] - '0');
-		x++;
 
-
-	}
-	if (minus % 2 != 0)
+		if (minus % 2 != 0)
 		{
-			result = -result;
+			result = result * 10 - (s[x] - '0');
 		}
 		else
 			result = result * 10 + (s[x] - '0');
+
+		x++;
+
+	}
 
 		return (result);
 }
