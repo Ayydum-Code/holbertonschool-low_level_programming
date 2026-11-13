@@ -10,7 +10,6 @@
 unsigned int _strspn(char *s, char *accept)
 {
 
-
 	unsigned int n = 0;
 	unsigned int l = 0;
 
@@ -26,9 +25,9 @@ unsigned int _strspn(char *s, char *accept)
 			l++;
 		}
 		if (s[n] != accept[l])
-			{
-				return(n);
-			}
+		{
+			return (n);
+		}
 		n++;
 	}
 
