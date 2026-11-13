@@ -10,9 +10,13 @@
 
 int main(void)
 {
-	int choice;
+	int choice = 1;
 
-	printf (" Welcome to Adam's simple calculator \n ");
+	printf ("  Welcome to Adam's simple calculator  \n ");
+
+	while (choice != 0)
+	{
+
 	printf (" Please select an option from the list below \n ");
 	printf (" 1) Add \n ");
 	printf (" 2) Subtract \n ");
@@ -22,10 +26,16 @@ int main(void)
 	scanf("%d", &choice);
 	printf ("Choice: %d \n", choice);
 
+	if (choice < 0 || choice >= 5)
+		{
+		printf ("  Invalid choice, please choose again  \n ");
+		}
+
 	if (choice == 0)
-	{
-		printf ("Bye!\n");
-		return (0);
+		{
+			printf ("Bye!\n");
+			return (0);
+		}
 	}
 	return (0);
 }
