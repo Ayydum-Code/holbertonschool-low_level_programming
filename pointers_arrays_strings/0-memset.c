@@ -6,7 +6,7 @@
  * @n: the unsigned int input
  * @b: the constant byte
  *
- * Description: uses _putchar to print.
+ * Return: returns s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
