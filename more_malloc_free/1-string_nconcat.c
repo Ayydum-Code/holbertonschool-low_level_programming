@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[len2] != '\0')
 		len2++;
 
-	if (len2 > n )
+	if (len2 > n)
 		len2 = n;
 
 	arr = malloc((len + len2 + 1) * sizeof(char));
