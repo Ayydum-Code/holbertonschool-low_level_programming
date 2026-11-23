@@ -3,7 +3,6 @@
 
 /**
  * free_dog - frees dogs
- * @dog_t: the dogs to free
  * @d: the elemnts in dogs
  *
  * Return: Nothing.
