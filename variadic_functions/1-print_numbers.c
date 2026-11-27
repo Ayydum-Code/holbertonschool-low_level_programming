@@ -5,7 +5,7 @@
 /**
  * print_numbers - a function that prints numbers
  * @n: the variable
- * @seperator: string to be printed between numbers
+ * @separator: string to be printed between numbers
  *
  * description: uses printf
  */
